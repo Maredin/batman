@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BATMAN</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -29,8 +31,36 @@
             <label class="mute__lable" for="mute"></label>
         </div>
     </header>
-    <main class="main">
-        <img src="img/logo.png" alt="logo" class="logo">
+    <main class="main main__slider" id="main__slider">
+        <div class="slider-main swiper">
+            <ul class="slider-main__list swiper-wrapper">
+                <li class="slider-main__item swiper-slide">
+                    <img class="slider-main__img" src="photo/photo01.jpg" alt="img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img class="slider-main__img" src="photo/photo02.jpg" alt="img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img class="slider-main__img" src="photo/photo03.jpg" alt="img">
+                </li>
+            </ul>
+        </div>
+        <div class="pagination">
+            <button class="paginator__array"></button>
+            <div class="slider-thumbs swiper">
+                <ul class="slider-thumbs__list swiper-wrapper">
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img class="slider-thumbs__img" src="photo/photo01-thumbs.jpg" alt="img">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img class="slider-thumbs__img" src="photo/photo02-thumbs.jpg" alt="img">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img class="slider-thumbs__img" src="photo/photo03-thumbs.jpg" alt="img">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
         <ul class="footer__links">
@@ -41,6 +71,8 @@
         </ul>
         <p class="footer__coperight">© 2022 WBEI TM & © DC</p>
     </footer>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>
 </body>
 </html>
